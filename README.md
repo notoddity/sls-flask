@@ -17,6 +17,9 @@ export AWS_SECRET_ACCESS_KEY=5678-your-secret-here
 ```
 
 ## Creating Flask microservices
+Generating your first Flask microservice with serverless is realatively easy and straight forward. As long as you meet all the above requirements
+you will only need to run a few lines to get started.
+
 ### Creating a flask microservice
 ```
 $ sls install --name my_new_microservice --url https://github.com/NotOddity/sls-flask.git
