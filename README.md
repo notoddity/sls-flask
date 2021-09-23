@@ -2,8 +2,9 @@
 
 ### Why?
 I previously forked serverless-flask which was good to learn from but I wanted to create a new template for
-myself and other to use on a Seperate project. I wanted clear documentation on how to setup and deploy a
-new flask microservice.
+myself and others to use on a seperate project. I wanted clear documentation on how to setup and deploy a
+new flask microservice. Using custom domains and setting up base_url's for multiple endpoints based
+on your git resposity branch so multiple developers can deploy test environments easily.
 
 ### Index
 - [Getting Started](https://github.com/NotOddity/sls-flask#getting-started)
@@ -139,7 +140,10 @@ $ curl https://my-domain.com/
 ```
 
 ## Multiple endpoints for the same service
+Coming Soon
 
 ## Using git branches to control staging
+Coming Soon
 
 ## Automatic deployment of certain stages with CodePipeline automatically (or with manual approval)
+Coming Soon
