@@ -17,13 +17,13 @@ export AWS_SECRET_ACCESS_KEY=5678-your-secret-here
 ```
 
 ## Creating Flask microservices
-Creating a flask microservice
+### Creating a flask microservice
 ```
 $ sls install --name my_new_microservice --url https://github.com/NotOddity/sls-flask.git
 $ cd my_new_microservice
 ```
 
-Creating virtual environment and installing dependencies
+### Creating virtual environment and installing dependencies
 ```
 $ npm install
 $ python3 -m venv .venv
@@ -31,7 +31,7 @@ $ source .venv/bin/activate
 (venv)$ pip install -r requirements.txt 
 ```
 
-To run your flask microservice locally
+### To run your flask microservice locally
 ```
 $ sls wsgi serve
  * Running on http://localhost:5000/ (Press CTRL+C to quit)
