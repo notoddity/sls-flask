@@ -10,8 +10,7 @@
     }],
     "devDependencies": {
         "serverless-python-requirements": "^5.1.1",
-        "serverless-wsgi": "^2.0.1",
-        "serverless-git-info": "^1.2.1"
+        "serverless-wsgi": "^2.0.1"
     }
     
 }

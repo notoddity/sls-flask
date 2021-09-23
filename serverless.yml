@@ -1,18 +1,18 @@
 service: sls-flask
 projectDir: ./
 frameworkVersion: '2'
+variablesResolutionMode: 20210326
 
 provider:
   name: aws
   runtime: python3.8
-  stage: ${git:branch} # Use git branch to define stage variable
+  stage: dev
   region: us-east-1
   lambdaHashingVersion: 20201221
 
 plugins:
   - serverless-wsgi
   - serverless-python-requirements
-  - serverless-git-info
 
 package:
   patterns:
