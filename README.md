@@ -1,6 +1,9 @@
-## Requirements
-
 ## Getting started
+
+### Requirements
+- NPM (For installing nodejs packages to extend serverless)
+- PIP (For installing pything packages and creating your microservice)
+- AWS Account (If you want to deploy your microservice to the wev)
 
 ## Creating Flask microservices
 Creating a flask microservice with serverless and this template is relatively easy
