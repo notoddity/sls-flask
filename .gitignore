@@ -4,3 +4,6 @@ node_modules/
 # Python Virtual Environments
 .venv
 venv
+
+# Ignore py cache
+__pycache__/
