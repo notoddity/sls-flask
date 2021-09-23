@@ -1,3 +1,8 @@
+- [Getting Started](https://github.com/NotOddity/sls-flask#getting-started)
+- [Creating a flask microservice](https://github.com/NotOddity/sls-flask#creating-flask-microservices)
+- [Deploying your microservice to Amazon Web Services](https://github.com/NotOddity/sls-flask#creating-flask-microservices)
+- [Adding a custom domain to your microservice](Adding a custom domain to your microservice)
+
 ## Getting started
 
 ### Required
@@ -16,7 +21,7 @@ export AWS_ACCESS_KEY_ID=1234-your-key-here
 export AWS_SECRET_ACCESS_KEY=5678-your-secret-here
 ```
 
-## Creating Flask microservices
+## Creating a flask microservice
 
 Generating your first Flask microservice with serverless is realatively easy and straight forward. As long as you meet all the above requirements
 you will only need to run a few lines to serve your first GET request.
@@ -82,11 +87,11 @@ $ curl https://ucpykgtlf2.execute-api.us-east-1.amazonaws.com/dev
 1. Ensure you have the domain you wish to use avaiable on your AWS Console 
 - [Registering a new domain](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html)
 - [Making Route 53 the DNS service for a domain that's in use](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/migrate-dns-domain-in-use.html)
-1. Once you have a domain you need to request a certificate
+2. Once you have a domain you need to request a certificate
 - [Requesting a public certificate](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-public.html)
 
 ### Install serverless-domain-manager
-1. `npm install serverless-domain-manager`
+- `npm install serverless-domain-manager`
 
 ### Add your custom domain to your serverless.yml
 ```
