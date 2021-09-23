@@ -1,6 +1,7 @@
 {
     "name": "sls-flask",
     "version": "latest",
+    "homepage": "https://github.com/NotOddity/sls-flask#readme",
     "devDependencies": {
         "serverless-python-requirements": "^5.1.1",
         "serverless-wsgi": "^2.0.1",
