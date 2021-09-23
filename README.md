@@ -5,8 +5,9 @@
 - `pip` For installing pything packages and creating your microservice
 
 ### Amazon Web Services
-While I won't go through how to setup a AWS account once you have an account
-read this to find out how to get your access key and secret then run the
+While I won't go through how to setup a AWS account, once you have an account
+[read this](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html)
+to find out how to get your access key and secret then run the
 following to store your credentials for serverless
 ```
 export AWS_ACCESS_KEY_ID=1234-your-key-here
