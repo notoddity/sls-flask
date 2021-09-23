@@ -3,7 +3,6 @@
 ## Getting started
 
 ## Creating Flask microservices
-### Creating Flask microservices
 Creating a flask microservice with serverless and this template is relatively easy
 ```
 $ sls install --name my_new_microservice --url https://github.com/NotOddity/sls-flask.git
