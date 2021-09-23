@@ -1,7 +1,6 @@
 {
-    "name": "sls-flask-template",
-    "version": "v0.0.1",
-    "description": "Serverless Flask template",
+    "name": "sls-flask",
+    "version": "latest",
     "devDependencies": {
         "serverless-python-requirements": "^5.1.1",
         "serverless-wsgi": "^2.0.1",

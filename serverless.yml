@@ -1,4 +1,4 @@
-service: serverless-flask
+service: sls-flask
 projectDir: ./
 frameworkVersion: '2'
 
