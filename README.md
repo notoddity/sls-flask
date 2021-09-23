@@ -1,5 +1,10 @@
 # Serverless Flask Template
 
+### Why?
+I previously forked serverless-flask which was good to learn from but I wanted to create a new template for
+myself and other to use on a Seperate project. I wanted clear documentation on how to setup and deploy a
+new flask microservice.
+
 ### Index
 - [Getting Started](https://github.com/NotOddity/sls-flask#getting-started)
 - [Creating a flask microservice](https://github.com/NotOddity/sls-flask#creating-flask-microservices)
