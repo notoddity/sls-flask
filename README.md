@@ -68,9 +68,6 @@ endpoints:
   ANY - https://ucpykgtlf2.execute-api.us-east-1.amazonaws.com/dev/{proxy+}
 functions:
   api: sls-flask-dev-api
-layers:
-  pythonRequirements: arn:aws:lambda:us-east-1:150428167105:layer:sls-flask-dev-python-requirements:1
-
 ```
 
 Lets test your new aws endpoint
@@ -79,8 +76,57 @@ $ curl https://ucpykgtlf2.execute-api.us-east-1.amazonaws.com/dev
 {"message": "Hello World!"}
 ```
 
+## Adding a custom domain to your microservice
+
+### Requirements
+1. Ensure you have the domain you wish to use avaiable on your AWS Console 
+- [Registering a new domain](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html)
+- [Making Route 53 the DNS service for a domain that's in use](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/migrate-dns-domain-in-use.html)
+1. Once you have a domain you need to request a certificate
+- [Requesting a public certificate](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-public.html)
+
+### Install serverless-domain-manager
+1. `npm install serverless-domain-manager`
+
+### Add your custom domain to your serverless.yml
+```
+custom:
+  customDomain:
+    createRoute53Record: true
+    domainName: my-domain.com
+    certificateName: my-domain.com
+    stage: dev
+    basePath: api
+```
+
+### Re-deploy with your new custom domain
+Again to deploy (or re-deploy) just type `sls deploy` and give it a while
+
+Result:
+```
+Service Information
+service: sls-flask
+stage: dev
+region: us-east-1
+stack: sls-flask-dev
+resources: 13
+api keys:
+  None
+endpoints:
+  ANY - https://my-domain.com/
+  ANY - https://my-domain.com/{proxy+}
+functions:
+  api: sls-flask-dev-api
+```
+
+Lets test just to make sure
+```
+$ curl https://my-domain.com/
+{"message": "Hello World!"}
+```
+
 ## Multiple endpoints for the same service
 
-## Adding a custom url to your microservice
+## Using git branches to control staging
 
-## Automatic deployment of certain stages with CodePipeline
+## Automatic deployment of certain stages with CodePipeline automatically (or with manual approval)
