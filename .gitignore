@@ -7,3 +7,7 @@ venv
 
 # Ignore py cache
 __pycache__/
+
+# Serverless deploy
+.requirements.zip
+.serverless/

@@ -17,6 +17,7 @@ export AWS_SECRET_ACCESS_KEY=5678-your-secret-here
 ```
 
 ## Creating Flask microservices
+
 Generating your first Flask microservice with serverless is realatively easy and straight forward. As long as you meet all the above requirements
 you will only need to run a few lines to serve your first GET request.
 
@@ -45,12 +46,38 @@ $ sls wsgi serve
 ### Test your microservice is responding
 ```
 $ curl http://localhost:5000/
-{
-    "message": "Hello World!"
-}
+{"message": "Hello World!"}
 ```
 
 ## Deploying your microservice to Amazon Web Services
+
+Serverless makes this super simple, just run `sls deploy` (This can take a while)
+
+You should get this
+```
+Service Information
+service: sls-flask
+stage: dev
+region: us-east-1
+stack: sls-flask-dev
+resources: 13
+api keys:
+  None
+endpoints:
+  ANY - https://ucpykgtlf2.execute-api.us-east-1.amazonaws.com/dev
+  ANY - https://ucpykgtlf2.execute-api.us-east-1.amazonaws.com/dev/{proxy+}
+functions:
+  api: sls-flask-dev-api
+layers:
+  pythonRequirements: arn:aws:lambda:us-east-1:150428167105:layer:sls-flask-dev-python-requirements:1
+
+```
+
+Lets test your new aws endpoint
+```
+$ curl https://ucpykgtlf2.execute-api.us-east-1.amazonaws.com/dev
+{"message": "Hello World!"}
+```
 
 ## Multiple endpoints for the same service
 
