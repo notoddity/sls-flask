@@ -18,20 +18,12 @@ export AWS_SECRET_ACCESS_KEY=5678-your-secret-here
 
 ## Creating Flask microservices
 Generating your first Flask microservice with serverless is realatively easy and straight forward. As long as you meet all the above requirements
-you will only need to run a few lines to get started.
+you will only need to run 3 lines to get serve your first GET request.
 
 ### Creating a flask microservice
 ```
 $ sls install --name my_new_microservice --url https://github.com/NotOddity/sls-flask.git
 $ cd my_new_microservice
-```
-
-### Creating virtual environment and installing dependencies
-```
-$ npm install
-$ python3 -m venv .venv
-$ source .venv/bin/activate
-(venv)$ pip install -r requirements.txt 
 ```
 
 ### To run your flask microservice locally
@@ -41,6 +33,21 @@ $ sls wsgi serve
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 123-456-789
+```
+Test your microservice is responding
+```
+$ curl http://localhost:5000/
+{
+    "message": "Hello World!"
+}
+```
+
+### Creating virtual environment and installing dependencies
+```
+$ npm install
+$ python3 -m venv .venv
+$ source .venv/bin/activate
+(venv)$ pip install -r requirements.txt 
 ```
 
 ## Deploying your microservice to Amazon Web Services
