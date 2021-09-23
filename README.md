@@ -10,7 +10,7 @@
 While I won't go through how to setup an AWS account, once you have an account
 [read this](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html)
 to find out how to get your access key and secret.
-Then run the following to store your credentials for serverless to use when deploying your code:
+Then run the following to store your credentials for serverless to use when deploying:
 ```
 export AWS_ACCESS_KEY_ID=1234-your-key-here
 export AWS_SECRET_ACCESS_KEY=5678-your-secret-here
