@@ -1,1 +1,6 @@
+# NPM Package Environment? Idk I am a python developer...
 node_modules/
+
+# Python Virtual Environments
+.venv
+venv
