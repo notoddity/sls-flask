@@ -1,8 +1,9 @@
 ## Getting started
 
-### Required cli's
-- `npm` For installing nodejs packages to extend serverless
-- `pip` For installing pything packages and creating your microservice
+### Required
+- `npm` For installing nodejs packages to extend serverless. [How to install nodejs & npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- `python` The primary language of a flask microservice. [How to install](https://wiki.python.org/moin/BeginnersGuide/Download)
+- `pip` For installing pything packages and creating your microservice [How to install](https://packaging.python.org/tutorials/installing-packages/#requirements-for-installing-packages)
 
 ### Amazon Web Services
 While I won't go through how to setup a AWS account, once you have an account
