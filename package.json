@@ -2,9 +2,16 @@
     "name": "sls-flask",
     "version": "latest",
     "homepage": "https://github.com/NotOddity/sls-flask#readme",
+    "bugs": "https://github.com/NotOddity/sls-flask/issues",
+    "repository": "github:NotOddity/sls-flask",
+    "licenses": [{
+        "type": "MIT",
+        "url": "https://github.com/NotOddity/sls-flask/blob/main/LICENSE"
+    }],
     "devDependencies": {
         "serverless-python-requirements": "^5.1.1",
         "serverless-wsgi": "^2.0.1",
         "serverless-git-info": "^1.2.1"
     }
+    
 }
