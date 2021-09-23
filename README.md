@@ -2,6 +2,7 @@
 
 ### Required
 - `npm` For installing nodejs packages to extend serverless. [How to install nodejs & npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- `npm install -g serverless` This is the serverless cli (`npm` must be installed)
 - `python` The primary language of a flask microservice. [How to install](https://wiki.python.org/moin/BeginnersGuide/Download)
 - `pip` For installing pything packages and creating your microservice [How to install](https://packaging.python.org/tutorials/installing-packages/#requirements-for-installing-packages)
 
@@ -16,14 +17,14 @@ export AWS_SECRET_ACCESS_KEY=5678-your-secret-here
 ```
 
 ## Creating Flask microservices
-Creating a flask microservice with serverless and this template is relatively easy
+Creating a flask microservice
 ```
 $ sls install --name my_new_microservice --url https://github.com/NotOddity/sls-flask.git
 $ cd my_new_microservice
 $ npm install
 ```
 
-To run your new flask microservice locally
+To run your flask microservice locally
 ```
 $ sls wsgi serve
  * Running on http://localhost:5000/ (Press CTRL+C to quit)
