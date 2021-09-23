@@ -1,7 +1,7 @@
 - [Getting Started](https://github.com/NotOddity/sls-flask#getting-started)
 - [Creating a flask microservice](https://github.com/NotOddity/sls-flask#creating-flask-microservices)
 - [Deploying your microservice to Amazon Web Services](https://github.com/NotOddity/sls-flask#creating-flask-microservices)
-- [Adding a custom domain to your microservice](Adding a custom domain to your microservice)
+- [Adding a custom domain to your microservice](https://github.com/NotOddity/sls-flask#adding-a-custom-domain-to-your-microservice)
 
 ## Getting started
 
