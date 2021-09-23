@@ -42,7 +42,7 @@ $ sls wsgi serve
  * Debugger is active!
  * Debugger PIN: 123-456-789
 ```
-Test your microservice is responding
+### Test your microservice is responding
 ```
 $ curl http://localhost:5000/
 {
