@@ -1,3 +1,6 @@
+# Serverless Flask Template
+
+### Index
 - [Getting Started](https://github.com/NotOddity/sls-flask#getting-started)
 - [Creating a flask microservice](https://github.com/NotOddity/sls-flask#creating-flask-microservices)
 - [Deploying your microservice to Amazon Web Services](https://github.com/NotOddity/sls-flask#creating-flask-microservices)
