@@ -7,10 +7,10 @@
 - `pip` For installing pything packages and creating your microservice [How to install](https://packaging.python.org/tutorials/installing-packages/#requirements-for-installing-packages)
 
 ### Amazon Web Services
-While I won't go through how to setup a AWS account, once you have an account
+While I won't go through how to setup an AWS account, once you have an account
 [read this](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html)
-to find out how to get your access key and secret then run the
-following to store your credentials for serverless
+to find out how to get your access key and secret.
+Then run the following to store your credentials for serverless:
 ```
 export AWS_ACCESS_KEY_ID=1234-your-key-here
 export AWS_SECRET_ACCESS_KEY=5678-your-secret-here
@@ -21,7 +21,14 @@ Creating a flask microservice
 ```
 $ sls install --name my_new_microservice --url https://github.com/NotOddity/sls-flask.git
 $ cd my_new_microservice
+```
+
+Creating virtual environment and installing dependencies
+```
 $ npm install
+$ python3 -m venv .venv
+$ source .venv/bin/activate
+(venv)$ pip install -r requirements.txt 
 ```
 
 To run your flask microservice locally
