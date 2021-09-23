@@ -1,0 +1,41 @@
+service: serverless-flask
+projectDir: ./
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: python3.8
+  stage: ${git:branch} # Use git branch to define stage variable
+  region: us-east-1
+  lambdaHashingVersion: 20201221
+
+plugins:
+  - serverless-wsgi
+  - serverless-python-requirements
+  - serverless-git-info
+
+package:
+  patterns:
+    - '!venv/**'
+    - '!.venv/**'
+    - '!node_modules/**'
+
+functions:
+  api:
+    runtime: ${self:provider.runtime}
+    handler: wsgi_handler.handler
+    layers:
+      - Ref: PythonRequirementsLambdaLayer
+    events:
+      - http: ANY /
+      - http: ANY /{proxy+}
+
+custom:
+  wsgi:
+    app: flask_app.app
+    packRequirements: false
+  pythonRequirements:
+    dockerizePip: true
+    zip: true
+    slim: true
+    layer: true
