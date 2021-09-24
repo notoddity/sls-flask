@@ -127,15 +127,15 @@ resources: 13
 api keys:
   None
 endpoints:
-  ANY - https://my-domain.com/
-  ANY - https://my-domain.com/{proxy+}
+  ANY - https://my-domain.com/api/
+  ANY - https://my-domain.com/api/{proxy+}
 functions:
   api: sls-flask-dev-api
 ```
 
 Lets test just to make sure
 ```
-$ curl https://my-domain.com/
+$ curl https://my-domain.com/api
 {"message": "Hello World!"}
 ```
 
